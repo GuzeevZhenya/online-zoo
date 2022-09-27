@@ -1,25 +1,3 @@
-/* 
-//Colors
-$bgBlack: #000;
-$orange: #e9804b;
-$green: #4b9200;
-$yellow: #ffee2e;
-$orangeGrad: #fed290;
-$pinkGradient: #febdab;
-$red: #d31314;
-$blackBlue: #333b41;
-$gray: #767474;
-$lightGray: #f1f3f2;
-$hover: #E47209;
-html, 
-
-@mixin button_gradient {
-    background-image: linear-gradient(90deg, #e9804b, #E47209);
-    border: 0;
-    border-radius: 25px;
-}
-*/
-
 body {
   height: 100%;
 }
@@ -61,6 +39,11 @@ body {
   text-align: center;
   position: relative;
   padding-top: 2px;
+}
+
+.header__logo a:hover {
+  cursor: pointer;
+  color: #e47209;
 }
 
 .header__logo_img {
@@ -273,6 +256,11 @@ body {
 .pets__arrow:active {
   background-image: none;
   background-color: #4b9200;
+}
+
+.pets__arrow:hover {
+  background-image: none;
+  background-color: #e47209;
 }
 
 .pets__arrow_left {
@@ -506,6 +494,7 @@ body {
   text-transform: uppercase;
   display: block;
   margin: 0 auto 0 331px;
+  cursor: pointer;
 }
 
 .pick__button:hover {
@@ -642,6 +631,7 @@ body {
   border-radius: 25px;
   text-transform: uppercase;
   display: block;
+  cursor: pointer;
 }
 
 .testimonails__button:hover {
@@ -824,6 +814,11 @@ footer form:invalid .submit:hover {
   color: #e47209;
 }
 
+.header__logo-link:hover .header__logo_text {
+  cursor: pointer;
+  color: #e47209;
+}
+
 .footer__footer .designed:hover .designed-p {
   color: #e47209;
   text-decoration: underline #e47209;
@@ -922,7 +917,6 @@ footer form:invalid .submit:hover {
   margin-bottom: 40px;
 }
 
-
 .donate__footer_note {
   margin-right: 10px;
   position: absolute;
@@ -944,7 +938,7 @@ footer form:invalid .submit:hover {
   height: 16px;
   flex-shrink: 0;
   flex-grow: 0;
-  border: 1px solid #FE9013;
+  border: 1px solid #fe9013;
   border-radius: 50%;
   margin-right: 10px;
   background-repeat: no-repeat;
@@ -958,12 +952,12 @@ footer form:invalid .submit:hover {
 
 .donate__footer_note:not(:disabled):not(:checked) + label:hover::before {
   cursor: pointer;
-  border-color: #4B9200;
+  border-color: #4b9200;
 }
 
 .donate__footer_note:not(:disabled):active + label::before {
-  background-color: #4B9200;
-  border-color: #4B9200;
+  background-color: #4b9200;
+  border-color: #4b9200;
 }
 
 .donate__footer_note:focus + label::before {
@@ -971,8 +965,8 @@ footer form:invalid .submit:hover {
 }
 
 .donate__footer_note:checked + label::before {
-  border-color: #4B9200;
-  background-color: #4B9200;
+  border-color: #4b9200;
+  background-color: #4b9200;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
 }
 
@@ -986,10 +980,9 @@ footer form:invalid .submit:hover {
   display: block;
   height: 24px;
   width: 24px;
-  border: 1px solid #FE9013;
+  border: 1px solid #fe9013;
   border-radius: 50%;
 }
-
 
 .circle2 {
   position: absolute;
@@ -998,20 +991,19 @@ footer form:invalid .submit:hover {
   display: block;
   height: 40px;
   width: 40px;
-  border: 1px solid #FE9013;
+  border: 1px solid #fe9013;
   border-radius: 50%;
 }
 
-nput[type="number"] {
+nput[type='number'] {
   -moz-appearance: textfield;
-  background-color: #FEE5D7;
+  background-color: #fee5d7;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-
 
 .panda__bg {
   background-image: url(../assets/images/panda_bg1.jpg);
@@ -1117,10 +1109,6 @@ input::-webkit-inner-spin-button {
   position: absolute;
   z-index: -1;
   opacity: 0;
-  /* для элемента label связанного с input c type="radio" */
-  /* стили при наведении курсора на радио */
-  /* стили при нажатии на радиокнопки */
-  /* стили для радиокнопки, находящейся в состоянии checked */
 }
 
 .donate__amount_line-item + label {
@@ -1128,7 +1116,6 @@ input::-webkit-inner-spin-button {
   display: inline-flex;
   align-items: center;
   user-select: none;
-  /* создание в label псевдоэлемента  before со следующими стилями */
 }
 
 .donate__amount_line-item + label span {
@@ -1223,8 +1210,6 @@ input::-webkit-inner-spin-button {
 .donate__amount_input-input:hover ::-moz-placeholder {
   color: #ffffff;
 }
-
-
 
 .donate__amount_input-input:focus {
   outline: none;
